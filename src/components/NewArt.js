@@ -66,10 +66,10 @@ export default function NewArt(props) {
 
             <AlertDialogBody>
               <HStack>
-                <a href="mailto:webmaster@example.com">
+                <a href="mailto:akinbaruwa@gmail.com">
                   <Icon h="25px" w="25px" as={FaEnvelope} />
                 </a>
-                <a href="mailto:webmaster@example.com">
+                <a href="mailto:akinbaruwa@gmail.com">
                   <Icon h="25px" w="25px" as={FaFacebookSquare} />
                 </a>
                 <a href="tel:+2347069654353">

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './ArchivePage.css';
 
 import AvailableWorks from '../components/AvailableWorks';
 import Layout from './Layout';
 
 function ArchivePage(props) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Layout>
       <div className="ArchivePage">

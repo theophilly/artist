@@ -4,14 +4,14 @@
   justify-content: flex-start;
   height: auto;
   margin-bottom: 20px;
-  padding: 0 5vw;
+  padding: 50px 5vw;
   margin-top: -50px;
 }
 .firstSection {
   flex: 0.5;
 }
 .secondSection {
-  padding: 100px 40px 30px;
+  padding: 100px 0px 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -51,6 +51,17 @@
 @media Screen and (max-width: 640px) {
   .ExhibitionSection {
     flex-direction: column;
+    padding: 50px 1vw;
+  }
+  .firstSection div {
+    padding: 40px;
+    height: 100px;
+    width: 100%;
+    background: turquoise;
+    color: rgb(19, 28, 53);
+    font-size: clamp(18px, 2vw, 32px);
+    margin-bottom: 3.5rem;
+    /* font-size: 2vw; */
   }
   .firstSection {
     display: flex;

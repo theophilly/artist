@@ -18,25 +18,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route
-          onUpdate={() => window.scrollTo(0, 0)}
-          history={createBrowserHistory()}
-          component={Home}
-          path="/"
-          exact
-        />
-        <Route
-          onUpdate={() => window.scrollTo(0, 0)}
-          history={createBrowserHistory()}
-          component={AboutPage}
-          path="/about"
-        />
-        <Route
-          onUpdate={() => window.scrollTo(0, 0)}
-          history={createBrowserHistory()}
-          component={ArchivePage}
-          path="/archive"
-        />
+        <Route component={Home} path="/" exact />
+        <Route component={AboutPage} path="/about" />
+        <Route component={ArchivePage} path="/archive" />
       </Switch>
     </BrowserRouter>
   );
