@@ -1,0 +1,127 @@
+.AboutPage {
+  display: flex;
+}
+
+.profileImage::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+  background: linear-gradient(to left top, rgb(67, 206, 162), rgb(24, 90, 157))
+    rgb(24, 90, 157);
+}
+.profileImage {
+  flex: 0.5;
+  height: 100vh;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  /* background: url('./profile.png'); */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.profileImage img {
+  min-height: 100%;
+}
+.aboutPageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+  margin-top: 45vh;
+}
+.aboutPageOverlay :nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.aboutPageOverlay p:nth-child(2) {
+  margin-bottom: 10px;
+}
+.aboutPageOverlay :nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+.aboutPageOverlay :nth-child(3) i {
+  margin-left: 15px;
+}
+.contentSection {
+  flex: 0.5;
+  padding: 50px 30px;
+}
+.contentSection div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.contentSection div hr {
+  width: 4rem;
+  height: 5px;
+  background: blueviolet;
+  margin-bottom: 10px;
+}
+.contentSection div ul {
+  list-style-type: none;
+  /* border: 1px solid red; */
+}
+.contentSection span {
+  /* border: 1px solid red; */
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(42, 84, 245);
+  background-image: linear-gradient(
+    45deg,
+    rgb(42, 84, 245) 0%,
+    rgb(51, 229, 187) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media Screen and (max-width: 1020px) {
+  .AboutPage {
+    flex-direction: column;
+  }
+  .profileImage {
+    flex: 1;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    /* background: url('./profile.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .profileImage::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    background: linear-gradient(
+        to left top,
+        rgb(67, 206, 162),
+        rgb(24, 90, 157)
+      )
+      rgb(24, 90, 157);
+  }
+  .aboutPageOverlay {
+    margin-top: 42vh;
+    padding: 20px;
+  }
+}

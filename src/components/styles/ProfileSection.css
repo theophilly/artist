@@ -1,0 +1,81 @@
+.ProfileSection {
+  padding: 0 3vw 55px 3vw;
+  font-family: "Poppins", sans-serif;
+  background: url("https://websitedemos.net/diagnostics-lab-02/wp-content/uploads/sites/662/2020/08/diagnostic-lab-content-gradient-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.ProfileSection .innerSection {
+  padding: 40px;
+  height: 150px;
+  width: 100%;
+  background: #391983;
+  color: white;
+  font-size: clamp(20px, 2vw, 32px);
+  margin-bottom: 3.5rem;
+}
+.ProfileSection hr {
+  border: none;
+  width: 4rem;
+  height: 5px;
+  background: #a08c5d;
+}
+.profileContent {
+  display: flex;
+}
+.profileContent :nth-child(1) {
+  flex: 0.6;
+}
+.profileContent :nth-child(1) button {
+  background: #a08c5d;
+  border: none;
+  color: white !important;
+  padding: 8px 30px;
+  border-radius: 15px;
+  font-size: clamp(14px, 1.3vw, 20px);
+}
+.profileContent :nth-child(2) {
+  flex: 0.4;
+}
+.profileContent div p {
+  font-family: "calibri" !important;
+  width: 90%;
+  line-height: 1.5rem;
+  padding: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 600;
+  /* font-size: 1.4vw; */
+}
+.profileContent img {
+  height: 350px;
+  min-width: 81%;
+  margin-top: -20px;
+}
+
+@media Screen and (max-width: 800px) {
+  .profileContent {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .profileContent img {
+    height: 320px;
+    min-width: 0%;
+    max-width: 400px;
+    margin-top: 5px;
+    width: 100%;
+    margin-top: -40px;
+  }
+  .profileContent div p {
+    width: 100%;
+
+    margin-top: 0px;
+    font-weight: 600;
+    /* font-size: 1.4vw; */
+  }
+  .profileContent :nth-child(1) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

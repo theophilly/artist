@@ -1,0 +1,98 @@
+.artImage {
+  width: 30vw;
+  height: 36vw;
+  position: relative;
+  margin-left: 15px;
+  font-size: clamp(11px, 1.2vw, 16px);
+  background: #f5f5f5;
+  /* border: 1px solid red; */
+}
+.artImage:hover {
+  /* width: 32vw;
+  height: 40vw; */
+}
+.artImage .op {
+  width: 100%;
+  height: 70%;
+  cursor: pointer;
+}
+.artImage .op img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.detailscontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailscontainer :nth-child(1) {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 5px;
+  color: #d3d90b;
+}
+.detailscontainer :nth-child(2) {
+  color: white;
+  background: dodgerblue;
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+.checkFullSize {
+  color: white;
+  background: dodgerblue;
+  border-radius: 3px;
+  padding: 4px 10px;
+  place-items: center;
+}
+.checkFullSizeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+@media Screen and (max-width: 900px) {
+  .artImage {
+    width: 44vw;
+    height: 39vw;
+    position: relative;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+  }
+  .artImage img {
+    width: 100%;
+    height: 75%;
+    cursor: pointer;
+  }
+}
+@media Screen and (max-width: 791px) {
+  .artImage {
+    width: 44vw;
+    height: 40vw;
+    position: relative;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+  }
+  .artImage img {
+    width: 100%;
+    height: 65%;
+    cursor: pointer;
+  }
+}
+@media Screen and (max-width: 531px) {
+  .artImage {
+    width: 90vw;
+    height: 61vw;
+    position: relative;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+  }
+  .artImage img {
+    width: 100%;
+    height: 70%;
+    cursor: pointer;
+  }
+}

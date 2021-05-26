@@ -1,0 +1,64 @@
+.ExhibitionSection {
+  display: flex;
+  max-width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 5vw;
+  margin-top: -50px;
+}
+.firstSection {
+  flex: 0.5;
+}
+.secondSection {
+  padding: 100px 40px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0.5;
+}
+.firstSection div {
+  padding: 40px;
+  height: 200px;
+  width: 100%;
+  background: turquoise;
+  color: rgb(19, 28, 53);
+  font-size: clamp(18px, 2vw, 32px);
+  margin-bottom: 3.5rem;
+  /* font-size: 2vw; */
+}
+.firstSection hr {
+  border: none;
+  width: 3rem;
+  height: 5px;
+  background: #3d341d;
+}
+.pExhibition {
+  width: 70%;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: clamp(14px, 1.3vw, 32px);
+}
+.firstSection button {
+  font-size: clamp(14px, 1.3vw, 32px);
+  border: none;
+  padding: 5px 30px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: transparent;
+}
+
+@media Screen and (max-width: 640px) {
+  .ExhibitionSection {
+    flex-direction: column;
+  }
+  .firstSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .secondSection {
+    padding: 0px;
+  }
+}

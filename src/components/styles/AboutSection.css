@@ -1,0 +1,18 @@
+.aboutSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.aboutSection {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.aboutDetails {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 50%;
+}

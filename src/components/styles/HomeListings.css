@@ -1,0 +1,44 @@
+.homeListing {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.recentWorks {
+  padding: 0px 50px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recentWorks p:nth-child(1) {
+  /* font-size: 2.5vw; */
+  font-size: clamp(24px, 2.5vw, 40px);
+  font-family: 'Kaushan Script', cursive;
+}
+/* .homeListing button {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1rem;
+} */
+.msg {
+}
+
+@media Screen and (max-width: 638px) {
+  .recentWorks {
+    flex-direction: column;
+    height: 20vh;
+    margin-bottom: 25px;
+  }
+  /* .homeListing button {
+    padding: 6px 15px;
+
+    font-size: 0.9rem;
+  } */
+}
