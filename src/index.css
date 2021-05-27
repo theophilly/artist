@@ -33,7 +33,7 @@ code {
   padding: 0px calc((100vw - 1100px) / 2);
   background: #23373f;
   height: 13vh;
-
+  z-index: 22;
   align-items: center;
   position: relative;
 }
