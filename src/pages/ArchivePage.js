@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
 import './ArchivePage.css';
 
@@ -12,6 +13,7 @@ function ArchivePage(props) {
 
   const filterData = (category) => {
     setWorks(arts.filter((value) => value.status === category));
+    scroll.scrollToTop();
   };
 
   useEffect(() => {

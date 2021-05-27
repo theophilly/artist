@@ -35,3 +35,30 @@
   background: white;
   margin-left: 30px;
 }
+
+@media Screen and (max-width: 1000px) {
+  .ArchivePage {
+    flex-direction: column-reverse;
+    background: #f5f5f5;
+    min-height: 100vh;
+    height: auto;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media Screen and (max-width: 600px) {
+  .componentSection {
+    flex: 0.75;
+    background: white;
+    margin-left: 0px;
+  }
+  .ArchivePage {
+    flex-direction: column-reverse;
+    background: #f5f5f5;
+    min-height: 100vh;
+    height: auto;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+  }
+}
