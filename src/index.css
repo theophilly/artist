@@ -53,7 +53,7 @@ code {
 .logo {
   display: flex;
   flex-direction: column;
-  border: 3px solid dodgerblue;
+  /* border: 3px solid dodgerblue; */
   padding: 5px;
   font-family: 'Kaushan Script', cursive;
   justify-items: center;
@@ -61,10 +61,10 @@ code {
   /* align-items: center; */
   /* margin-left: 15px; */
 }
-.logo:hover {
+/* .logo:hover {
   border: 3px solid white;
   transition: all 0.3s ease-in-out;
-}
+} */
 .logo span {
   font-size: 1.6rem;
   display: block;
@@ -95,6 +95,9 @@ header ul li {
 }
 header ul li:hover {
   background: dodgerblue;
+}
+header ul li:hover ul {
+  display: block;
 }
 .hero-container {
   padding: 0px calc((100vw - 1100px) / 2);
@@ -143,8 +146,9 @@ header button:hover {
   position: absolute;
   left: 0px;
   width: 290px;
+  display: none;
   padding: 0;
-  top: 7vh;
+  top: 6.2vh;
   cursor: pointer;
   z-index: 1000;
 }
@@ -195,13 +199,24 @@ header button:hover {
     top: 84px;
     right: 0px;
     width: 100%;
+    z-index: 22;
     text-align: center;
   }
   .menuLinks.active li {
     padding: 10px;
+    margin: 0px;
   }
   header button {
     display: none;
+  }
+  .nav-Links:hover .dropdown-menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+  .nav-Links:hover .dropdown-menu li {
+    text-align: center;
   }
 }
 
@@ -211,5 +226,11 @@ header button:hover {
   }
   .text p:nth-child(2) {
     font-size: 1.3rem;
+  }
+  .logo span {
+    font-size: 1.1rem !important;
+    display: block;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
   }
 }

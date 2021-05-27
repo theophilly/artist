@@ -15,6 +15,10 @@ function ArchivePage(props) {
     setWorks(arts.filter((value) => value.status === category));
     scroll.scrollToTop({ duration: 1500 });
   };
+  const getItemCount = (category) => {
+    return Object.keys(arts.filter((value) => value.status === category))
+      .length;
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,23 +30,23 @@ function ArchivePage(props) {
           <h2>Categories</h2>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Available Works')}>Available Works</p>
-            <span>(4)</span>
+            <span>({getItemCount('Available Works')})</span>
           </div>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Sold Work')}>Sold Works</p>{' '}
-            <span>(10)</span>
+            <span>({getItemCount('Sold Work')})</span>
           </div>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Works in Progress')}>
               Works in Progress
             </p>{' '}
-            <span>(2)</span>
+            <span>({getItemCount('Works in Progress')})</span>
           </div>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Featured Artiste')}>
               Featured Artiste
             </p>{' '}
-            <span>(5)</span>
+            <span>({getItemCount('Featured Artiste')})</span>
           </div>
         </div>
         <div className="componentSection">

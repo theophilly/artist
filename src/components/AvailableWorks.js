@@ -6,7 +6,7 @@ function AvailableWorks({ arts }) {
   return (
     <div className="AvailableWorks">
       <span>Home </span>
-      <span>Available Works</span>
+      <span> / Available Works</span>
       <h1>Available Works</h1>
       <p>
         Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse
