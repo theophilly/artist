@@ -6,6 +6,7 @@ export const arts = [
     medium: `MIXED MEDIA ON CANVAS`,
     dimension: `153 CM BY 87 CM (APPROX)`,
     year: 2020,
+    status: 'Available Works',
   },
   {
     _id: `2`,
@@ -14,6 +15,7 @@ export const arts = [
     medium: `NATURAL PIGMENT ON CANVAS`,
     dimension: `157 BY 85 (APPROX)`,
     year: 2020,
+    status: 'Available Works',
   },
   {
     _id: `3`,
@@ -22,6 +24,7 @@ export const arts = [
     medium: `NATURAL PIGMENT ON CANVAS`,
     dimension: `84 CM BY 156 CM (APPROX)`,
     year: 2020,
+    status: 'Sold Work',
   },
   {
     _id: `4`,
@@ -30,6 +33,7 @@ export const arts = [
     medium: `NATURAL PIGMENT ON PAPER`,
     dimension: `48 CM BY 33 CM (APROX)`,
     year: 2014,
+    status: 'Sold Work',
   },
   {
     _id: `5`,
@@ -38,6 +42,7 @@ export const arts = [
     medium: `MIXED MEDIA ON CANVAS`,
     dimension: `155 CM BY 84 CM`,
     year: 2020,
+    status: 'Works in Progress',
   },
   {
     _id: `6`,
@@ -46,6 +51,7 @@ export const arts = [
     medium: `NATURAL PIGMENT ON CANVAS`,
     dimension: `155 CM BY 84 CM`,
     year: 2020,
+    status: 'Works in Progress',
   },
   {
     _id: `7`,
@@ -54,6 +60,7 @@ export const arts = [
     medium: `MIXED MEDIA ON CANVAS`,
     dimension: `155 BY 84`,
     year: 2020,
+    status: 'Featured Artiste',
   },
   {
     _id: `8`,
@@ -62,6 +69,7 @@ export const arts = [
     medium: `MIXED MEDIA ON CANVAS`,
     dimension: `84 CM BY 156 CM (APPROX)`,
     year: 2020,
+    status: 'Featured Artiste',
   },
   {
     _id: `9`,
@@ -70,5 +78,6 @@ export const arts = [
     medium: `NATURAL PIGMENT ON CANVAS`,
     dimension: `157 CM BY 85 CM (APROX)`,
     year: 2020,
+    status: 'Featured Artiste',
   },
 ];

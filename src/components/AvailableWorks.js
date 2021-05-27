@@ -1,7 +1,8 @@
-import React from "react";
-import "./styles/AvailableWorks.css";
+import React from 'react';
+import './styles/AvailableWorks.css';
+import NewArt from './NewArt';
 
-function AvailableWorks(props) {
+function AvailableWorks({ arts }) {
   return (
     <div className="AvailableWorks">
       <span>Home </span>
@@ -12,6 +13,20 @@ function AvailableWorks(props) {
         urna nibh, nean dignissim felis. Lorem ipsum dolor sit amet,
         consectetuer adipiscing donec odio.
       </p>
+      <div
+        style={{
+          marginTop: '20px',
+          display: 'flex',
+          gap: '20px',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
+        {arts.map((art) => (
+          // <ArtComponent art={art}></ArtComponent>
+          <NewArt {...art}></NewArt>
+        ))}
+      </div>
     </div>
   );
 }

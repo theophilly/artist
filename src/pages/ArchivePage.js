@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './ArchivePage.css';
 
 import AvailableWorks from '../components/AvailableWorks';
 import Layout from './Layout';
+import { arts } from '../arts';
 
 function ArchivePage(props) {
   const { pathname } = useLocation();
+  const [works, setWorks] = useState(arts);
+
+  const filterData = (category) => {
+    setWorks(arts.filter((value) => value.status === category));
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,20 +23,28 @@ function ArchivePage(props) {
         <div className="categoriesPart">
           <h2>Categories</h2>
           <div className="categoriesGrouping">
-            <p>Available Works</p> <span>(4)</span>
+            <p onClick={() => filterData('Available Works')}>Available Works</p>
+            <span>(4)</span>
           </div>
           <div className="categoriesGrouping">
-            <p>Sold Works</p> <span>(10)</span>
+            <p onClick={() => filterData('Sold Work')}>Sold Works</p>{' '}
+            <span>(10)</span>
           </div>
           <div className="categoriesGrouping">
-            <p>Works in Progress</p> <span>(2)</span>
+            <p onClick={() => filterData('Works in Progress')}>
+              Works in Progress
+            </p>{' '}
+            <span>(2)</span>
           </div>
           <div className="categoriesGrouping">
-            <p>Featured Artiste</p> <span>(5)</span>
+            <p onClick={() => filterData('Featured Artiste')}>
+              Featured Artiste
+            </p>{' '}
+            <span>(5)</span>
           </div>
         </div>
         <div className="componentSection">
-          <AvailableWorks></AvailableWorks>
+          <AvailableWorks arts={works}></AvailableWorks>
         </div>
       </div>
     </Layout>

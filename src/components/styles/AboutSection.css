@@ -8,11 +8,19 @@
 
 .aboutSection {
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin-bottom: 20px;
 }
 .aboutDetails {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Mulish', sans-serif;
   width: 50%;
+}
+
+@media Screen and (max-width: 600px) {
+  .aboutDetails {
+    width: 90%;
+  }
+  .aboutSection {
+    font-size: 1.5rem;
+  }
 }
