@@ -62,7 +62,7 @@ function Header(props) {
               >
                 <li>
                   <Link
-                    to="/"
+                    to="/archive"
                     onClick={() => setClick(false)}
                     className=" dropdown-link"
                   >
