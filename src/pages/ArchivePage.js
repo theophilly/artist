@@ -13,7 +13,7 @@ function ArchivePage(props) {
 
   const filterData = (category) => {
     setWorks(arts.filter((value) => value.status === category));
-    scroll.scrollToTop();
+    scroll.scrollToTop({ duration: 1500 });
   };
 
   useEffect(() => {
