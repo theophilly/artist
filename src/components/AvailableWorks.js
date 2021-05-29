@@ -2,16 +2,13 @@ import React from 'react';
 import './styles/AvailableWorks.css';
 import NewArt from './NewArt';
 
-function AvailableWorks({ arts }) {
+function AvailableWorks({ info, arts, details }) {
   return (
     <div className="AvailableWorks">
-      <span>Home </span>
-      <span> / Available Works</span>
-      <h1>Available Works</h1>
-      <p>
-        Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse
-        urna nibh, nean dignissim felis. .
-      </p>
+      <span>Archieve </span>
+      <span> / {details}</span>
+      <h1>{details}</h1>
+      <p>{info}</p>
       <div
         style={{
           marginTop: '20px',
