@@ -236,7 +236,17 @@ header button:hover {
   .logo span {
     font-size: 1.1rem !important;
     display: block;
+    line-height: 1.3rem;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+  }
+  .hamburger {
+    font-size: x-large;
+  }
+  .header {
+    height: 75px;
+  }
+  .menuLinks.active {
+    top: 75px;
   }
 }
