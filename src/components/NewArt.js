@@ -20,15 +20,22 @@ import {
   ModalBody,
   ModalCloseButton,
 } from '@chakra-ui/react';
+import RViewerJS from 'viewerjs-react';
+import 'viewerjs-react/dist/index.css';
 import { FaEnvelope, FaFacebookSquare, FaPhoneAlt } from 'react-icons/fa';
 
 export default function NewArt(props) {
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = () => setIsOpen(false);
   const cancelRef = React.useRef();
+
   return (
     <Box w="300px">
-      <Image h="200px" w="300px" src={props.image}></Image>
+      <RViewerJS
+        options={{ toolbar: { prev: { show: 0 }, next: { show: 0 } } }}
+      >
+        <img src={props.image.asset.url} className="op"></img>
+      </RViewerJS>
       <Box padding="2px 0px 8px" justifyContent="space-between" d="flex">
         <Box fontWeight="600" as="span">
           Artist: BAA RUU WAA

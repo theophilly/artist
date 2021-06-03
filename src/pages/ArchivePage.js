@@ -6,10 +6,12 @@ import './ArchivePage.css';
 import AvailableWorks from '../components/AvailableWorks';
 import Layout from './Layout';
 import { arts } from '../arts';
+import sanityClient from '../client';
 
 function ArchivePage(props) {
   const { pathname } = useLocation();
-  const [works, setWorks] = useState(arts);
+  const [works, setWorks] = useState([]);
+  const [allworks, setAllWorks] = useState([]);
   const [details, setDetails] = useState('Available Works');
   const [info, setInfo] = useState(
     'Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. .'
@@ -22,8 +24,8 @@ function ArchivePage(props) {
     'fourth Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. . ',
   ];
 
-  const filterData = (category) => {
-    setWorks(arts.filter((value) => value.status === category));
+  const filterData = (category, works = [...allworks]) => {
+    setWorks(works.filter((value) => value.status === category));
     scroll.scrollToTop({ duration: 1500 });
     setDetails(category);
     if (category === 'Available Works') {
@@ -37,13 +39,37 @@ function ArchivePage(props) {
     }
   };
   const getItemCount = (category) => {
-    return Object.keys(arts.filter((value) => value.status === category))
+    return Object.keys(allworks.filter((value) => value.status === category))
       .length;
   };
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    sanityClient
+      .fetch(
+        `*[_type == "arts"]{
+          title,
+          image{
+            asset->{
+              _id,
+              url
+            },
+            alt
+          },
+          medium,
+          dimension,
+          year,
+          status
+      }`
+      )
+      .then((data) => {
+        setWorks(data);
+        setAllWorks(data);
+      })
+      .catch(console.error);
   }, [pathname]);
+
+  console.log(works);
   return (
     <Layout>
       <div className="ArchivePage">

@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './styles/HomeListings.css';
 import ArtComponent from './ArtComponent';
 import { Link } from 'react-router-dom';
 import { arts } from '../arts';
+import sanityClient from '../client';
 import NewArt from './NewArt';
 
 function HomeListings(props) {
+  const { pathname } = useLocation();
+  const [works, setWorks] = useState([]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    sanityClient
+      .fetch(
+        `*[_type == "arts"]{
+          title,
+          image{
+            asset->{
+              _id,
+              url
+            },
+            alt
+          },
+          medium,
+          dimension,
+          year,
+          status
+      }`
+      )
+      .then((data) => {
+        setWorks(data);
+      })
+      .catch(console.error);
+  }, [pathname]);
   return (
     <div className="homeListing">
       <div className="recentWorks">
@@ -25,7 +53,7 @@ function HomeListings(props) {
           justifyContent: 'center',
         }}
       >
-        {arts.map((art) => (
+        {works.map((art) => (
           // <ArtComponent art={art}></ArtComponent>
           <NewArt {...art}></NewArt>
         ))}
