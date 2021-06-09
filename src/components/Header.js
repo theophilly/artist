@@ -117,9 +117,9 @@ function Header(props) {
             <li>Publications</li> 
           </Link> */}
         </ul>
-        <Link to="archive">
-          <button>Gallery</button>
-        </Link>
+        <button>
+          <Link to="archive">Gallery</Link>
+        </button>
       </div>
       <AlertDialog
         size="xs"
