@@ -1,24 +1,15 @@
 import React from 'react';
 import {
   Box,
-  Image,
   Button,
   Icon,
-  Modal,
-  ModalOverlay,
   HStack,
-  ModalContent,
-  ModalHeader,
   AlertDialog,
   AlertDialogBody,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-  useDisclosure,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
 } from '@chakra-ui/react';
 import RViewerJS from 'viewerjs-react';
 import 'viewerjs-react/dist/index.css';
@@ -44,21 +35,25 @@ export default function NewArt(props) {
           {props.year}
         </Box>
       </Box>
-      <Box mt="-5px" fontSize="0.9rem">
+      <Box fontWeight="600" mt="-5px" fontSize="0.9rem">
         Title: {props.title}
       </Box>
-      <Box mt="-5px" fontSize="0.9rem">
+      <Box fontWeight="600" mt="-5px" fontSize="0.9rem">
         Medium: {props.medium}
       </Box>
-      <Box mt="-5px" fontSize="0.9rem">
+      <Box fontWeight="600" mt="-5px" fontSize="0.9rem">
         Dimension: {props.dimension}
       </Box>
-      <Box mt="-5px" fontSize="0.9rem">
+      <Box fontWeight="600" mt="-5px" fontSize="0.9rem">
         Year: {props.year}
       </Box>
-      <Button onClick={() => setIsOpen(true)} size="xs" colorScheme="blue">
-        Private Message
-      </Button>
+      <Box fontWeight="600" d="flex" alignItems="center">
+        <span>Price:</span>
+        <Button onClick={() => setIsOpen(true)} size="xs" colorScheme="blue">
+          Send Private Message
+        </Button>
+      </Box>
+
       <AlertDialog
         size="xs"
         isOpen={isOpen}
@@ -79,7 +74,7 @@ export default function NewArt(props) {
                 <a href="mailto:akinbaruwa@gmail.com">
                   <Icon h="25px" w="25px" as={FaFacebookSquare} />
                 </a>
-                <a href="tel:+2347069654353">
+                <a href="tel:+2347038898581">
                   <Icon h="23px" w="23px" as={FaPhoneAlt} />
                 </a>
               </HStack>

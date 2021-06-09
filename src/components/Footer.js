@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles/Footer.css';
+import { Box } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
@@ -7,7 +9,8 @@ function Footer(props) {
       <footer className="foot">
         <div>
           <div className="log">
-            <span>BAARUUWAA</span>
+            <span> BAA RUU WAA </span>
+
             <span>ARTISTRY</span>
           </div>
 
@@ -19,12 +22,12 @@ function Footer(props) {
         </div>
         <div>
           <p>CONTACT INFO</p>
-          <p>
+          {/* <p>
             <i class="fas fa-map-marker-alt"></i>30 Ibokun Road, Osogbo, Osun
             State, Nigeria
-          </p>
+          </p> */}
           <p>
-            <i class="fas fa-phone-alt"></i>+234 70 38898581
+            <i class="fas fa-phone-alt"></i>+2347038898581
           </p>
           <p>
             <i class="fas fa-envelope"></i>akinbaruwa@gmail.com
@@ -33,10 +36,12 @@ function Footer(props) {
         <div>
           <p> QUICK LINKS</p>
           <ul>
-            <li>About</li>
-            <li>Exhibitions</li>
-            <li>Gallery</li>
-            <li>Awards</li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="archive">Gallery</Link>
+            </li>
           </ul>
         </div>
       </footer>

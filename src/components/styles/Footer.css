@@ -2,19 +2,23 @@
   padding: 100px 50px;
   display: flex;
   background: black;
-  color: white;
+  color: rgb(59, 136, 127);
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .foot .log {
-  font-size: 18px;
+  font-size: 30px;
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
-  padding: 6px 10px;
-  width: 150px;
+  border: 1px solid blue;
+  line-height: 35px;
+  padding: 6px 0px;
+  color: turquoise;
+  width: 280px;
   margin-bottom: 50px;
   font-weight: bold;
+
+  align-items: center;
 }
 .foot div {
   margin-right: 50px;
@@ -36,7 +40,7 @@
 }
 
 .foot div:nth-child(3) p:nth-child(1) {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 25px;
   margin-top: 10px;
@@ -52,7 +56,16 @@
     padding: 50px 40px;
   }
   .foot .log {
-    margin-bottom: 10px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    line-height: 30px;
+    padding: 6px 10px 0px;
+    color: turquoise;
+    width: 250px;
+    letter-spacing: normal;
+    margin-bottom: 50px;
     font-weight: bold;
   }
   .foot div {

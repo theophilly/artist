@@ -12,10 +12,10 @@ function Home(props) {
     <Layout>
       <div>
         <Hero />
-        <AboutSection />
+        {/* <AboutSection />
         <HomeListings />
         <ExhibitionSection />
-        <ProfileSection />
+        <ProfileSection /> */}
         <Footer></Footer>
       </div>
     </Layout>

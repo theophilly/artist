@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
+import {
+  Box,
+  Button,
+  Icon,
+  HStack,
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
+} from '@chakra-ui/react';
+import { FaEnvelope, FaFacebookSquare, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
   const [click, setClick] = useState(false);
   const [dropdown, setdropdown] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const onClose = () => setIsOpen(false);
+  const cancelRef = React.useRef();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,8 +43,8 @@ function Header(props) {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <span>BAA RUU WAA</span>
-          <span>ARTISTRY</span>
+          <span>BAA RUU WAA </span>
+          <span> ARTISTRY</span>
         </Link>
       </div>
       <label for="menu" id="nav-icon">
@@ -44,13 +60,20 @@ function Header(props) {
 
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <ul className={click ? 'menuLinks active' : 'menuLinks'}>
-          <Link to="/" onClick={closeMobileMenu} className="nav-Links">
+          <Link to="/about" onClick={closeMobileMenu} className="nav-Links">
             <li>About</li>
           </Link>
-          <Link to="/" onClick={closeMobileMenu} className="nav-Links">
+          <Link
+            to="/"
+            onClick={() => {
+              closeMobileMenu();
+              setIsOpen(true);
+            }}
+            className="nav-Links"
+          >
             <li>Contact</li>
           </Link>
-          <Link to="/" onClick={closeMobileMenu} className="nav-Links">
+          {/* <Link to="/" onClick={closeMobileMenu} className="nav-Links">
             <li>Recent Work</li>
           </Link>
           <Link to="#" className="nav-Links">
@@ -90,12 +113,48 @@ function Header(props) {
               </ul>
             </li>
           </Link>
-          <Link to="/" onClick={closeMobileMenu} className="nav-Links">
-            <li>Publications</li>
-          </Link>
+          <Link to="/" onClick={closeMobileMenu} className="nav-Links"> 
+            <li>Publications</li> 
+          </Link> */}
         </ul>
-        <button>Gallery</button>
+        <Link to="archive">
+          <button>Gallery</button>
+        </Link>
       </div>
+      <AlertDialog
+        size="xs"
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+      >
+        <AlertDialogOverlay isCentered>
+          <AlertDialogContent>
+            <AlertDialogHeader fontSize="lg" fontWeight="bold">
+              contact the artist
+            </AlertDialogHeader>
+
+            <AlertDialogBody>
+              <HStack>
+                <a href="mailto:akinbaruwa@gmail.com">
+                  <Icon h="25px" w="25px" as={FaEnvelope} />
+                </a>
+                <a href="mailto:akinbaruwa@gmail.com">
+                  <Icon h="25px" w="25px" as={FaFacebookSquare} />
+                </a>
+                <a href="tel:+2347038898581">
+                  <Icon h="23px" w="23px" as={FaPhoneAlt} />
+                </a>
+              </HStack>
+            </AlertDialogBody>
+
+            <AlertDialogFooter>
+              <Button ref={cancelRef} onClick={onClose}>
+                Cancel
+              </Button>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
     </header>
   );
 }

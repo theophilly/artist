@@ -19,8 +19,8 @@ function AboutPage(props) {
           <div className="aboutPageOverlay">
             <p>Hey I'm Akinjide Baruwa</p>
             <p>
-              A contemporary Nigerian artist whose main medium is painting. His
-              studio practice His studio practice also
+              A contemporary (nigeria)n artist whose main medium is painting.
+              His studio practice His studio practice also
             </p>
             <p>
               <i class="fab fa-instagram"></i>
@@ -34,7 +34,7 @@ function AboutPage(props) {
             <span>Intro</span>
             <hr style={{ width: 25 }}></hr>
             <ul>
-              <p>Born 1968 in Osogbo, living and working in Osogbo, Nigeria.</p>
+              <p>Born in Osogbo, living and working in Osogbo, (nigeria).</p>
             </ul>
           </div>
           <div>
@@ -42,9 +42,10 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                1992-1994 Osun State College of Education, Ila-Orangun, Nigeria
+                1992-1994 Osun State College of Education, Ila-Orangun,
+                (nigeria)
               </li>
-              <li>1995-1998 Obafemi Awolowo University, Ile-Ife, Nigeria</li>
+              <li>1995-1998 Obafemi Awolowo University, Ile-Ife, (nigeria)</li>
             </ul>
           </div>
           <div>
@@ -55,7 +56,7 @@ function AboutPage(props) {
                 1993 Afas Art Exhibition, Ila-Orangun Mbari Mbayo Museum, Art
                 Studio, Osogbo Pro-Democracy Fund Raising Exhibition, Osogbo
               </li>
-              <li>1995-1998 Obafemi Awolowo University, Ile-Ife, Nigeria</li>
+              <li>1995-1998 Obafemi Awolowo University, Ile-Ife, (nigeria)</li>
               <li> 2000 Signature Gallery, Abuja</li>
               <li> 2003 “Best of Ife”, Goethe Institute, Lagos</li>
               <li>
@@ -65,17 +66,16 @@ function AboutPage(props) {
                 2005 “Art Competition”, African Artist Resource Center, Lagos.
               </li>
               <li>
-                2008 “Best 10 Nigerian Artists”, African Artist Foundation,
+                2008 “Best 10 nigerian Artists”, African Artist Foundation,
                 Lagos
               </li>
               <li> 2013 “Mbari Mbayo”, Nike Gallery/US Embassy, Lagos</li>
               <li>
-                {' '}
                 2015 "Baa Ruu Waa Artistry", Pan-African University, Lagos
               </li>
-              <li> 2016 “Siege Of Hyena”, Ramada Hotel, Kassel, Germany</li>
+              <li> 2016 “Siege Of Hyena”, Ramadan Hotel, Kassel, Germany</li>
               <li>
-                2016 “Fund Raising exhihibition, for Women-empowerment ”,
+                2016 “Usanii Fund Raising exhihibition, for Women-empowerment ”,
                 British Council, Lagos.
               </li>
               <li>
@@ -89,8 +89,7 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                “Sound of distant drum”, mural, Deutsches Haus, Cultural
-                Association, Ile-Ife (2017)
+                “Sound of distant drum”, mural, Dutch Haus, Ile-Ife (2017)
               </li>
             </ul>
           </div>
@@ -99,14 +98,13 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                Winner of the African Artist Resource Center’s “Art
-                Competition”, 2005
+                Overall Winner of the African Artist Resource Center, 2005.
               </li>
               <li>
-                Nominated for “Best 10 Nigerian Artists”, African Artist
+                Nominated for “Best 10 nigerian Artists”, African Artist
                 Foundation, Lagos, 2008
               </li>
-              <li>Artist Residency at Signature Gallery, Lagos, 2011-2013</li>
+              <li>Artist Residency at Signature Beyond, Lagos, 2011-2013</li>
             </ul>
           </div>
           <div>
@@ -114,7 +112,7 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                Jess Castellote (ed.): Contemporary Nigerian Art in Lagos
+                Jess Castellote (esq.): Contemporary (nigeria)n Art in Lagos
                 Private Collections. Ibadan, Bookcraft Publishers, 2012.
               </li>
               <li>
@@ -122,7 +120,7 @@ function AboutPage(props) {
                 www.orishaimage.com, 2016 (Online)
               </li>
               <li>
-                Baa Waa Ruu Artistry; Guardian newspaper (March 6th 2016).
+                Baa Ruu Waa Artistry; Guardian newspaper (March 6th 2016).
               </li>
             </ul>
           </div>
@@ -131,7 +129,7 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                Amanda Villepastour (ed.): The Yoruba God of Drumming.
+                Amanda Villepastour (esq.): The Yoruba God of Drumming.
                 Transatlantic
               </li>
               <li>
@@ -145,10 +143,10 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                &nbsp;&nbsp;&nbsp; Akinjide Baruwa is a contemporary Nigerian
-                artist living and working in Osogbo, Nigeria. He studied art at
-                the Obafemi Awolowo University in Ile-Ife and his main medium is
-                painting. His studio practice also includes various forms of
+                &nbsp;&nbsp;&nbsp; Akinjide Baruwa is a contemporary (nigeria)n
+                artist living and working in Osogbo, (nigeria). He studied art
+                at the Obafemi Awolowo University in Ile-Ife and his main medium
+                is painting. His studio practice also includes various forms of
                 textile dying and drawing on paper.
               </li>
               <br></br>
@@ -165,7 +163,7 @@ function AboutPage(props) {
                 &nbsp;&nbsp;&nbsp;The artist founded the Baa Ruu Waa Artistry as
                 a reaction to the need for a change in society and to adapt the
                 local philosophy to the needs of the modern society. Akinjide
-                Baruwa has exhibited his work in Nigeria and internationally,
+                Baruwa has exhibited his work in (nigeria) and internationally,
                 his work is mentioned in various publications.
               </li>
             </ul>
@@ -181,7 +179,7 @@ function AboutPage(props) {
                 Activities of the Mbari Mbayo can be traced back to the
                 legendary ‘Ori Olokun’ renaissance, stirred by activism in the
                 art, in the early days of the University of Ile-Ife, now known
-                as Obafemi Awolowo University, and Eastern Nigeria, where ‘Uli
+                as Obafemi Awolowo University, and Eastern (nigeria), where ‘Uli
                 paintings’ are relayed and endure.
               </li>
               <br></br>
@@ -249,8 +247,8 @@ function AboutPage(props) {
                 &nbsp;&nbsp;&nbsp;Now I am in the future, a professional artist
                 and have collected experience over some sixteen years, exhibited
                 among the best of Ile-Ife in the year 2003, many exhibitions in
-                Nigeria, few abroad and recently completed a two years Artist in
-                Residence program in Lagos at the Signature Gallery, at Ikoyi,
+                (nigeria), few abroad and recently completed a two years Artist
+                in Residence program in Lagos at the Signature Beyond, at Ikoyi,
                 Lagos. The experience as an artist in residency is such a song.”
                 (Akinjide Baruwa)
               </li>
