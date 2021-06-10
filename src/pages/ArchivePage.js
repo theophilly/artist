@@ -91,7 +91,7 @@ function ArchivePage(props) {
           </div>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Featured Artiste')}>
-              Featured Artiste
+              Featured Artist
             </p>
             <span>({getItemCount('Featured Artiste')})</span>
           </div>

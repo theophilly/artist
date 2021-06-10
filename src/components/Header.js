@@ -64,7 +64,7 @@ function Header(props) {
             <li>About</li>
           </Link>
           <Link
-            to="/"
+            to="#"
             onClick={() => {
               closeMobileMenu();
               setIsOpen(true);
@@ -138,7 +138,7 @@ function Header(props) {
                 <a href="mailto:akinbaruwa@gmail.com">
                   <Icon h="25px" w="25px" as={FaEnvelope} />
                 </a>
-                <a href="mailto:akinbaruwa@gmail.com">
+                <a href="https://m.me/akinjide.baruwa.16" target="_blank">
                   <Icon h="25px" w="25px" as={FaFacebookSquare} />
                 </a>
                 <a href="tel:+2347038898581">
