@@ -112,12 +112,14 @@ function Header(props) {
                 </li>
               </ul>
             </li>
-          </Link>
-          <Link to="/" onClick={closeMobileMenu} className="nav-Links"> 
-            <li>Publications</li> 
           </Link> */}
+          <Link to="/archive" onClick={closeMobileMenu} className="nav-Links">
+            <button className="liButton">
+              <Link to="/archive">Gallery</Link>
+            </button>
+          </Link>
         </ul>
-        <button>
+        <button className="mainButton">
           <Link to="archive">Gallery</Link>
         </button>
       </div>

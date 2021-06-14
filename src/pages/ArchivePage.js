@@ -18,9 +18,9 @@ function ArchivePage(props) {
   );
 
   const secondDetails = [
-    'Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. .',
-    'second volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. .',
-    'Third volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. . ',
+    '',
+    '',
+    '',
     'fourth Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. . ',
   ];
 
