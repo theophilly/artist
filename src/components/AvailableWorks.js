@@ -5,8 +5,8 @@ import NewArt from './NewArt';
 function AvailableWorks({ info, arts, details }) {
   return (
     <div className="AvailableWorks">
-      <span>Archieve </span>
-      <span> / {details === 'Sold Work' ? 'Unavailable Works' : details}</span>
+      <span>Archive </span>
+      <span> / {details === 'Sold Work' ? 'Unavailable' : details}</span>
       <h1>{details}</h1>
       <p>{info}</p>
       <div
