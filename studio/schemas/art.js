@@ -31,8 +31,8 @@ export default {
       type: 'string',
       options: {
         list: [
-          { value: 'Available Works', title: 'Available Works' },
-          { value: 'Sold Work', title: 'Sold Work' },
+          { value: 'Available', title: 'Available' },
+          { value: 'Unavailable', title: 'Unavailable' },
           { value: 'Works in Progress', title: 'Works in Progress' },
           { value: 'Featured Artiste', title: 'Featured Artiste' },
         ],
