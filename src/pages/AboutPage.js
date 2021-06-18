@@ -14,8 +14,7 @@ function AboutPage(props) {
   return (
     <Layout>
       <div className="AboutPage">
-        <div className="profileImage">
-          {/* <img src={profile}></img> */}
+        {/* <div className="profileImage">
           <div className="aboutPageOverlay">
             <p>Hey I'm Akinjide Baruwa</p>
             <p>
@@ -28,7 +27,7 @@ function AboutPage(props) {
               <i class="fab fa-twitter"></i>
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="contentSection">
           <div>
             <span>Intro</span>
