@@ -19,7 +19,7 @@ function AvailableWorks({ info, arts, details }) {
         }}
       >
         {arts.map((art) => (
-          //<ArtComponent art={art}></ArtComponent>
+          // <ArtComponent art={art}></ArtComponent>
           <NewArt {...art}></NewArt>
         ))}
       </div>
