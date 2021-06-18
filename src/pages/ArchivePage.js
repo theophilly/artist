@@ -76,12 +76,12 @@ function ArchivePage(props) {
         <div className="categoriesPart">
           <h2>Categories</h2>
           <div className="categoriesGrouping">
-            <p onClick={() => filterData('Available Works')}>Available Works</p>
-            <span>({getItemCount('Available Works')})</span>
+            <p onClick={() => filterData('Available')}>Available</p>
+            <span>({getItemCount('Available')})</span>
           </div>
           <div className="categoriesGrouping">
-            <p onClick={() => filterData('Sold Work')}>Unavailable</p>
-            <span>({getItemCount('Sold Work')})</span>
+            <p onClick={() => filterData('Unavailable')}>Unavailable</p>
+            <span>({getItemCount('Unavailable')})</span>
           </div>
           <div className="categoriesGrouping">
             <p onClick={() => filterData('Works in Progress')}>
@@ -90,10 +90,8 @@ function ArchivePage(props) {
             <span>({getItemCount('Works in Progress')})</span>
           </div>
           <div className="categoriesGrouping">
-            <p onClick={() => filterData('Featured Artiste')}>
-              Featured Artist
-            </p>
-            <span>({getItemCount('Featured Artiste')})</span>
+            <p onClick={() => filterData('Featured Artist')}>Featured Artist</p>
+            <span>({getItemCount('Featured Artist')})</span>
           </div>
         </div>
         <div className="componentSection">

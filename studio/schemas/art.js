@@ -34,7 +34,7 @@ export default {
           { value: 'Available', title: 'Available' },
           { value: 'Unavailable', title: 'Unavailable' },
           { value: 'Works in Progress', title: 'Works in Progress' },
-          { value: 'Featured Artiste', title: 'Featured Artiste' },
+          { value: 'Featured Artist', title: 'Featured Artist' },
         ],
       },
     },
