@@ -80,7 +80,7 @@ function ArchivePage(props) {
             <span>({getItemCount('Available Works')})</span>
           </div>
           <div className="categoriesGrouping">
-            <p onClick={() => filterData('Sold Work')}>Sold Works</p>
+            <p onClick={() => filterData('Sold Work')}>Unavailable Works</p>
             <span>({getItemCount('Sold Work')})</span>
           </div>
           <div className="categoriesGrouping">

@@ -6,7 +6,7 @@ function AvailableWorks({ info, arts, details }) {
   return (
     <div className="AvailableWorks">
       <span>Archieve </span>
-      <span> / {details}</span>
+      <span> / {details === 'Sold Work' ? 'Unavailable Works' : details}</span>
       <h1>{details}</h1>
       <p>{info}</p>
       <div

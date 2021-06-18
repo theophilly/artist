@@ -11,6 +11,7 @@ function Hero(props) {
     console.log(textRef);
     init(textRef.current, {
       showCursor: false,
+      loop: false,
       startDelay: 0,
       strings: [
         'Baa Ruu Waa Artistry is offshoot of Mbari Mbayo Art Movement, that is notable for the  revival of the mind and a re-dedication to the culture in which one belongs...',
