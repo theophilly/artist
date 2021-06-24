@@ -111,7 +111,7 @@ function AboutPage(props) {
             <hr></hr>
             <ul>
               <li>
-                Jess Castellote (esq.): Contemporary (nigeria)n Art in Lagos
+                Jess Castellote (esq.): Contemporary (nigerian) Art in Lagos
                 Private Collections. Ibadan, Bookcraft Publishers, 2012.
               </li>
               <li>

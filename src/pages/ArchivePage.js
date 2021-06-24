@@ -12,7 +12,7 @@ function ArchivePage(props) {
   const { pathname } = useLocation();
   const [works, setWorks] = useState([]);
   const [allworks, setAllWorks] = useState([]);
-  const [details, setDetails] = useState('Available Works');
+  const [details, setDetails] = useState('Available');
   const [info, setInfo] = useState(
     'Quisque volutpat mattis am. Nullam malesuada erat ut turpis. Suspendisse urna nibh, nean dignissim felis. .'
   );
@@ -65,6 +65,7 @@ function ArchivePage(props) {
       .then((data) => {
         setWorks(data);
         setAllWorks(data);
+        console.log(data);
       })
       .catch(console.error);
   }, [pathname]);
