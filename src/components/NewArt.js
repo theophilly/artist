@@ -21,7 +21,14 @@ export default function NewArt(props) {
   const cancelRef = React.useRef();
 
   return (
-    <Box w="300px">
+    <Box
+      sx={{
+        '@media only screen and (max-width: 730px) ': {
+          marginTop: '20px',
+        },
+      }}
+      w="300px"
+    >
       <RViewerJS
         options={{ toolbar: { prev: { show: 0 }, next: { show: 0 } } }}
       >
